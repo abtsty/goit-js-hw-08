@@ -4,6 +4,7 @@ const form = document.querySelector('.feedback-form');
 // console.dir(form);
 
 let onDataForm = {};
+let isFormSubmitted = false;
 
 const onElForm = () => {
   const savedMsg = localStorage.getItem('feedback-form-state');
@@ -28,6 +29,7 @@ const onSubmitForm = evt => {
   console.log(onDataForm);
 
   evt.target.reset();
+  isFormSubmitted = true;
 };
 
 onElForm();
