@@ -28,6 +28,7 @@ const onSubmitForm = evt => {
   localStorage.removeItem('feedback-form-state');
   console.log(onDataForm);
 
+  onDataForm = {};
   evt.target.reset();
   isFormSubmitted = true;
 };
